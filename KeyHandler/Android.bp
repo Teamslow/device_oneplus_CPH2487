@@ -1,0 +1,20 @@
+android_app {
+    name: "KeyHandler",
+
+    srcs: ["src/**/*.kt"],
+
+    certificate: "platform",
+    platform_apis: true,
+    system_ext_specific: true,
+
+    optimize: {
+        proguard_flags_files: ["proguard.flags"],
+    },
+}
+
+sh_binary {
+    name: "tri-state-key-calibrate",
+    init_rc: ["tri-state-key-calibrate.rc"],
+    src: "tri-state-key-calibrate.sh",
+    vendor: true,
+}

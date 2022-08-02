@@ -1,0 +1,5 @@
+cc_library_headers {
+    name: "kernel_headers.oplus_lahaina",
+    export_include_dirs: ["include"],
+    vendor: true,
+}
