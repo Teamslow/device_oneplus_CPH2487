@@ -34,7 +34,7 @@
 # The filesystem that contains the filesystem checker binary (typically /system) cannot
 # specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
 
-# pick from android/device/qcom/lahaina/fstab.qcom
+# pick from android/device/qcom/taro/fstab.qcom
 
 #<src>                                                 <mnt_point>            <type>  <mnt_flags and options>                            <fs_mgr_flags>
 system                                                  /system                ext4    ro,barrier=1,discard                                 wait,slotselect,logical,first_stage_mount

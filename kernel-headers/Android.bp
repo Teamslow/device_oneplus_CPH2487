@@ -1,5 +1,5 @@
 cc_library_headers {
-    name: "kernel_headers.oplus_lahaina",
+    name: "kernel_headers.oplus_taro",
     export_include_dirs: ["include"],
     vendor: true,
 }

@@ -1,8 +1,8 @@
 cc_binary {
-    name: "vendor.lineage.powershare@1.0-service.oplus_lahaina",
+    name: "vendor.lineage.powershare@1.0-service.oplus_taro",
     defaults: ["hidl_defaults"],
-    init_rc: ["vendor.lineage.powershare@1.0-service.oplus_lahaina.rc"],
-    vintf_fragments: ["vendor.lineage.powershare@1.0-service.oplus_lahaina.xml"],
+    init_rc: ["vendor.lineage.powershare@1.0-service.oplus_taro.rc"],
+    vintf_fragments: ["vendor.lineage.powershare@1.0-service.oplus_taro.xml"],
     vendor: true,
     relative_install_path: "hw",
     srcs: [

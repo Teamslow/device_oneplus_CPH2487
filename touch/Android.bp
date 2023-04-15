@@ -16,13 +16,13 @@ oplus_lineage_touch_hal_cc_defaults {
 }
 
 cc_binary {
-    name: "vendor.lineage.touch@1.0-service.oplus_lahaina",
+    name: "vendor.lineage.touch@1.0-service.oplus_taro",
     defaults: [
         "hidl_defaults",
         "oplus_lineage_touch_hal_defaults",
     ],
-    init_rc: ["vendor.lineage.touch@1.0-service.oplus_lahaina.rc"],
-    vintf_fragments: ["vendor.lineage.touch@1.0-service.oplus_lahaina.xml"],
+    init_rc: ["vendor.lineage.touch@1.0-service.oplus_taro.rc"],
+    vintf_fragments: ["vendor.lineage.touch@1.0-service.oplus_taro.xml"],
     vendor: true,
     relative_install_path: "hw",
     srcs: [

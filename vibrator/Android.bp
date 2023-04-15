@@ -2,7 +2,7 @@ Common_CFlags = ["-Wall"]
 Common_CFlags += ["-Werror"]
 
 cc_library_shared {
-    name: "vendor.qti.hardware.vibrator.impl.oplus_lahaina",
+    name: "vendor.qti.hardware.vibrator.impl.oplus_taro",
     vendor: true,
     cflags: Common_CFlags,
     srcs: [
@@ -20,12 +20,12 @@ cc_library_shared {
 }
 
 cc_binary {
-    name: "vendor.qti.hardware.vibrator.service.oplus_lahaina",
+    name: "vendor.qti.hardware.vibrator.service.oplus_taro",
     vendor: true,
     relative_install_path: "hw",
-    init_rc: ["vendor.qti.hardware.vibrator.service.oplus_lahaina.rc"],
+    init_rc: ["vendor.qti.hardware.vibrator.service.oplus_taro.rc"],
     vintf_fragments: [
-        "vendor.qti.hardware.vibrator.service.oplus_lahaina.xml",
+        "vendor.qti.hardware.vibrator.service.oplus_taro.xml",
     ],
     cflags: Common_CFlags,
     srcs: [
@@ -37,12 +37,12 @@ cc_binary {
         "libbase",
         "libbinder_ndk",
         "android.hardware.vibrator-V1-ndk",
-        "vendor.qti.hardware.vibrator.impl.oplus_lahaina",
+        "vendor.qti.hardware.vibrator.impl.oplus_taro",
     ],
 }
 
 cc_library_shared {
-    name: "vendor.qti.hardware.vibrator.offload.impl.oplus_lahaina",
+    name: "vendor.qti.hardware.vibrator.offload.impl.oplus_taro",
     vendor: true,
     cflags: Common_CFlags + ["-DTARGET_SUPPORTS_OFFLOAD"],
     srcs: [
@@ -62,12 +62,12 @@ cc_library_shared {
 }
 
 cc_binary {
-    name: "vendor.qti.hardware.vibrator.offload.service.oplus_lahaina",
+    name: "vendor.qti.hardware.vibrator.offload.service.oplus_taro",
     vendor: true,
     relative_install_path: "hw",
-    init_rc: ["vendor.qti.hardware.vibrator.offload.service.oplus_lahaina.rc"],
+    init_rc: ["vendor.qti.hardware.vibrator.offload.service.oplus_taro.rc"],
     vintf_fragments: [
-        "vendor.qti.hardware.vibrator.offload.service.oplus_lahaina.xml",
+        "vendor.qti.hardware.vibrator.offload.service.oplus_taro.xml",
     ],
     cflags: Common_CFlags + ["-DTARGET_SUPPORTS_OFFLOAD"],
     srcs: [
@@ -79,6 +79,6 @@ cc_binary {
         "libbase",
         "libbinder_ndk",
         "android.hardware.vibrator-V1-ndk",
-        "vendor.qti.hardware.vibrator.offload.impl.oplus_lahaina",
+        "vendor.qti.hardware.vibrator.offload.impl.oplus_taro",
     ],
 }

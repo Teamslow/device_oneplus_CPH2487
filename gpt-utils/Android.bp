@@ -4,7 +4,7 @@
 //
 
 cc_library {
-    name: "libgptutils.oplus_lahaina",
+    name: "libgptutils.oplus_taro",
     cflags: ["-D_BSG_FRAMEWORK_KERNEL_HEADERS"],
     export_include_dirs: ["."],
     header_libs: ["generated_kernel_headers"],

@@ -13,31 +13,31 @@
 // limitations under the License.
 
 filegroup {
-    name: "vendor.lineage.livedisplay@2.1-oplus_lahaina-af",
+    name: "vendor.lineage.livedisplay@2.1-oplus_taro-af",
     srcs: ["AntiFlicker.cpp"],
 }
 
 filegroup {
-    name: "vendor.lineage.livedisplay@2.1-oplus_lahaina-se",
+    name: "vendor.lineage.livedisplay@2.1-oplus_taro-se",
     srcs: ["SunlightEnhancement.cpp"],
 }
 
 cc_library_headers {
-    name: "vendor.lineage.livedisplay@2.1-oplus_lahaina-headers",
+    name: "vendor.lineage.livedisplay@2.1-oplus_taro-headers",
     vendor_available: true,
     export_include_dirs: ["include"],
 }
 
 cc_binary {
-    name: "vendor.lineage.livedisplay@2.1-service.oplus_lahaina",
+    name: "vendor.lineage.livedisplay@2.1-service.oplus_taro",
     defaults: ["hidl_defaults"],
-    init_rc: ["vendor.lineage.livedisplay@2.1-service.oplus_lahaina.rc"],
-    vintf_fragments: ["vendor.lineage.livedisplay@2.1-service.oplus_lahaina.xml"],
+    init_rc: ["vendor.lineage.livedisplay@2.1-service.oplus_taro.rc"],
+    vintf_fragments: ["vendor.lineage.livedisplay@2.1-service.oplus_taro.xml"],
     relative_install_path: "hw",
     srcs: [
         ":vendor.lineage.livedisplay@2.0-sdm-pa",
         ":vendor.lineage.livedisplay@2.0-sdm-utils",
-        ":vendor.lineage.livedisplay@2.1-oplus_lahaina-se",
+        ":vendor.lineage.livedisplay@2.1-oplus_taro-se",
         "service.cpp",
     ],
     shared_libs: [
@@ -49,9 +49,9 @@ cc_binary {
         "vendor.lineage.livedisplay@2.1",
     ],
     header_libs: [
-        "kernel_headers.oplus_lahaina",
+        "kernel_headers.oplus_taro",
         "vendor.lineage.livedisplay@2.0-sdm-headers",
-        "vendor.lineage.livedisplay@2.1-oplus_lahaina-headers",
+        "vendor.lineage.livedisplay@2.1-oplus_taro-headers",
     ],
     proprietary: true,
 }

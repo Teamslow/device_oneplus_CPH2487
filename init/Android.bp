@@ -4,10 +4,10 @@
 //
 
 cc_library_static {
-    name: "libinit_oplus_lahaina",
+    name: "libinit_oplus_taro",
     recovery_available: true,
     shared_libs: ["libbase"],
-    srcs: ["init_oplus_lahaina.cpp"],
+    srcs: ["init_oplus_taro.cpp"],
 }
 
 prebuilt_etc {

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.biometrics.fingerprint@2.3-service.oplus_lahaina"
+#define LOG_TAG "android.hardware.biometrics.fingerprint@2.3-service.oplus_taro"
 
 #include "BiometricsFingerprint.h"
 
