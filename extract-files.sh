@@ -14,7 +14,7 @@ fi
 
 set -e
 
-export DEVICE=CPH2487
+export DEVICE=udon
 export DEVICE_COMMON=sm8475-common
 export VENDOR=oneplus
 

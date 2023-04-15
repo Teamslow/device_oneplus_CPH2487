@@ -36,7 +36,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Inherit from the common OEM chipset makefile.
-$(call inherit-product, device/oneplus/sm8350-common/common.mk)
+$(call inherit-product, device/oneplus/sm8475-common/common.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \

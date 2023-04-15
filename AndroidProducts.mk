@@ -1,7 +1,7 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_CPH2487.mk
+    $(LOCAL_DIR)/lineage_udon.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_CPH2487-user \
-    lineage_CPH2487-userdebug \
-    lineage_CPH2487-eng
+    lineage_udon-user \
+    lineage_udon-userdebug \
+    lineage_udon-eng
